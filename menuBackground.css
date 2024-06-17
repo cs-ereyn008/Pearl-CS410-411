@@ -1,13 +1,13 @@
-/* Add a dark purple background to the top navigation bar */
+/* Add a dark grey background to the top navigation bar */
 .topnav {
-    background-color: #4b0082; /* Dark purple */
+    background-color: #2f4f4f; /* Dark grey */
     overflow: hidden;
 }
 
 /* Style the links inside the nav bar */
 .topnav a {
     float: none;
-    color: #f2f2f2; /* Light gray */
+    color: #dcdcdc; /* Light grey */
     text-align: center;
     padding: 14px 25px;
     text-decoration: none;
@@ -16,12 +16,12 @@
 
 /* Change the color of the links on hover */
 .topnav a:hover {
-    background-color: #9370db; /* Medium purple */
+    background-color: #696969; /* Dim grey */
     color: white;
 }
 
 /* Add color to the active/current link */
 .topnav a.active {
-    background-color: #9370db; /* Medium purple */
+    background-color: #696969; /* Dim grey */
     color: white;
 }

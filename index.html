@@ -1,117 +1,187 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Tamer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-body {
-    background: url('https://www.sullivantire.com/-/media/road-trip-blog_dec-2021_1200x447.ashx') no-repeat center center fixed;
-    background-size: cover;
-}
+        body {
+            background: url('https://www.sullivantire.com/-/media/road-trip-blog_dec-2021_1200x447.ashx') no-repeat center center fixed;
+            background-size: cover;
+        }
 
-header {
-    background-color: #377BB5;
-    padding: 20px;
-    color: white;
-}
+        header {
+            background-color: #377BB5;
+            padding: 20px;
+            color: white;
+        }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.navbar h1 {
-    margin-left: 10px;
-}
+        .navbar h1 {
+            margin-left: 10px;
+        }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-}
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
 
-nav ul li {
-    display: inline;
-}
+        nav ul li {
+            display: inline;
+        }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
 
-.main-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-}
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
 
-.left-section {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        .left-section {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.logo-box {
-    background-color: #f1e0b0;
-    padding: 50px;
-    border-radius: 50%;
-    text-align: center;
-    width: 300px;
-    height: 300px;
-}
+        .logo-box {
+            background-color: #f1e0b0;
+            padding: 50px;
+            border-radius: 50%;
+            text-align: center;
+            width: 300px;
+            height: 300px;
+        }
 
-.logo-box h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
+        .logo-box h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
 
-.logo-box p {
-    font-size: 18px;
-}
+        .logo-box p {
+            font-size: 18px;
+        }
 
-.right-section {
-    width: 50%;
-    background-color: #4378b4;
-    padding: 20px;
-    border-radius: 20px;
-    color: white;
-}
+        .right-section {
+            width: 50%;
+            background-color: #4378b4;
+            padding: 20px;
+            border-radius: 20px;
+            color: white;
+        }
 
-.right-section h2 {
-    text-align: center;
-}
+        .right-section h2 {
+            text-align: center;
+        }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
 
-label {
-    font-size: 16px;
-}
+        label {
+            font-size: 16px;
+        }
 
-input, textarea, button {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    width: 100%;
-}
+        input, textarea, button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+        }
 
-textarea {
-    height: 80px;
-}
+        textarea {
+            height: 80px;
+        }
 
-button {
-    background-color: #f1e0b0;
-    color: black;
-    cursor: pointer;
-    font-size: 16px;
-}
+        button {
+            background-color: #f1e0b0;
+            color: black;
+            cursor: pointer;
+            font-size: 16px;
+        }
 
-button:hover {
-    background-color: #e6d5a3;
-}
+        button:hover {
+            background-color: #e6d5a3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Traffic Tamer</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Ticket Search</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Login/Sign</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main-content">
+        <div class="left-section">
+            <div class="logo-box">
+                <h2>Traffic Tamer</h2>
+                <p>Simplifying Traffic Laws Across States</p>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <h2>Ticket Information</h2>
+            <p>Confused? Check out our 'How It Works' page for more information</p>
+            <form>
+                <label for="state">STATE</label>
+                <input type="text" id="state" name="state" required>
+                
+                <label for="county">COUNTY</label>
+                <input type="text" id="county" name="county" required>
+                
+                <label for="police-code">LOCAL POLICE CODE</label>
+                <input type="text" id="police-code" name="police-code" required>
+                
+                <label for="violation-code">VIOLATION CODE</label>
+                <input type="text" id="violation-code" name="violation-code" required>
+
+                <label for="officer-id">Officer Identification</label>
+                <input type="text" id="officer-id" name="officer-id">
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="description">Violation Description</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="additional-info">Additional Information</label>
+                <textarea id="additional-info" name="additional-info"></textarea>
+
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

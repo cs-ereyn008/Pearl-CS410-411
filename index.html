@@ -1,45 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-<head>
-    <link rel="stylesheet" href="menuBackground.css">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+body {
+    background: url('https://www.sullivantire.com/-/media/road-trip-blog_dec-2021_1200x447.ashx') no-repeat center center fixed;
+    background-size: cover;
+}
 
-    <title>Traffic Tamer</title>
-    <style>
-        /* Additional CSS styles can be added here if necessary */
-        .bg-traffic {
-            background-image: url('images/LATraffic.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    </style>
-</head>
+header {
+    background-color: #377BB5;
+    padding: 20px;
+    color: white;
+}
 
-<body>
-    <!-- Navigation Menu -->
-    <section class="relative">
-        <nav class="topnav flex justify-between text-white">
-            <div class="px-5 xl:px-12 py-6 flex w-full items-center">
-                <a class="text-3xl font-bold font-heading" href="#">
-                    Traffic Tamer
-                </a>
-                <!-- Nav Links -->
-                <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="AboutUs.html">About Us</a></li>
-                    <li><a href="Problem.html">Problem</a></li>
-                    <li><a href="Presentation.html">Presentation</a></li>
-                </ul>
-            </div>
-        </nav>
-    </section>
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    <div class="bg-traffic min-h-screen py-6 flex flex-col justify-center sm:py-12">
-        <h1 class="text-5xl text-white text-center">Traffic Tamer</h1>
-        <h1 class="text-2xl p-4 text-white text-center">by Team Pearl</h1>
-    </div>
-</body>
+.navbar h1 {
+    margin-left: 10px;
+}
 
-</html>
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.left-section {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-box {
+    background-color: #f1e0b0;
+    padding: 50px;
+    border-radius: 50%;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+
+.logo-box h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.logo-box p {
+    font-size: 18px;
+}
+
+.right-section {
+    width: 50%;
+    background-color: #4378b4;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.right-section h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 16px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+textarea {
+    height: 80px;
+}
+
+button {
+    background-color: #f1e0b0;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e6d5a3;
+}
